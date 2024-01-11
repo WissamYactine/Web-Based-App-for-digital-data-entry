@@ -1,4 +1,4 @@
-# IN5320 project - Case 2
+# Web Based App Project
 
 ## Functionality
 
