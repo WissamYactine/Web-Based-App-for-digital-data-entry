@@ -1,0 +1,19 @@
+.statusCell {
+  width: 5.5em;
+}
+
+.table {
+  margin-bottom: 1em;
+}
+
+.tableCellHeadField {
+  text-align: center;
+}
+
+.tableButton {
+  margin-left: 0.5em;
+}
+
+.tableCell {
+  text-align: center;
+}

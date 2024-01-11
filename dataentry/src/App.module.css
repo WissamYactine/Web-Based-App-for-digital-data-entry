@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  min-width: 11em;
+  min-height: 100vh;
+  padding: 1.25em;
+}
+
+.right {
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 1.625em 0;
+  background: #FFFFFF;
+}
+
+.headerFieldContainer {
+  display: inline-block;
+  margin: 1em;
+  width: 10vw;
+}
+
+.headerFields {
+  margin-right: 1em;
+  height: max-content;
+}
+
+.dataTemplateContainer {
+  display: flex;
+  margin-right: 1em;
+}
+

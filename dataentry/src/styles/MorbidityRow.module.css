@@ -1,0 +1,123 @@
+.maximisedRow {
+  display: grid;
+  grid-template-columns: 0.2fr 10fr 0.5fr 5fr 5fr 0.5fr 6fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  border: 0.03em solid #e6e6e6;
+  padding-bottom: 1em;
+  margin-bottom: 0.2em;
+  gap: 5px 6px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". diseaseTitle . ageGroupsTitle ageGroupsTitle . referralsTitle . . . . ."
+    ". disease . groupA groupB . referrals . . buttons . ."
+    ". disease . groupC groupD . referrals . . buttons . .";
+}
+
+.minimisedRow {
+  display: grid;
+  grid-template-columns: 0.2fr 10fr 0.5fr 5fr 5fr 0.5fr 6fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.005fr 0.2fr 0.005fr;
+  border: 0.03em solid #e6e6e6;
+  margin-bottom: 0.2em;
+  gap: 5px 6px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". chosenDisease . deaths deaths . chosenReferrals . . minButtons . ."
+    ". . . . . . . . . . . .";
+}
+
+.diseaseContainer {
+  grid-area: disease;
+  align-self: center;
+}
+
+.diseaseTitle {
+  grid-area: diseaseTitle;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.ageGroup1Container {
+  grid-area: groupA;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.ageGroup2Container {
+  grid-area: groupB;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.ageGroup3Container {
+  grid-area: groupC;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.ageGroup4Container {
+  grid-area: groupD;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.ageGroupsTitle {
+  grid-area: ageGroupsTitle;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.referralsContainer {
+  grid-area: referrals;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.referralsTitle {
+  grid-area: referralsTitle;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.buttonContainer {
+  grid-area: buttons;
+  display: flex;
+  align-self: center;
+}
+
+.numberInputPair {
+  display: flex;
+}
+
+.button {
+  font-family: monospace; /* TODO revise */
+  margin-left: 1em;
+}
+
+.minButtonContainer {
+  grid-area: minButtons;
+  display: flex;
+  align-self: center;
+}
+
+.chosenDiseaseContainer {
+  grid-area: chosenDisease;
+  text-align: center;
+  align-self: center;
+}
+
+.deathsContainer {
+  grid-area: deaths;
+  text-align: center;
+}
+
+.chosenReferralsContainer {
+  grid-area: chosenReferrals;
+  text-align: center;
+}
